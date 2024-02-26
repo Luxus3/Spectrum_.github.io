@@ -8,17 +8,28 @@ export default {
         body: '#293241',
         color: '#FFFFFF',
         particles: '#8338EC',
-        card: '#3D405B',
         footer: '#0D1B2A',
-        header: '#1b263b',
         icon: '#E5E5E5',
       },
       maxWidth: {
-        desktop: '1400px',
+        desktop: '1024px',
       },
       fontFamily: {
         raleway: ['Raleway Variable', ...defaultTheme.fontFamily.sans],
         montserrat: ['Montserrat Variable', ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        mobile: '370px',
+      },
+      spacing: {
+        '20vh': '20vh',
+        '40vh': '40vh',
+        '60vh': '60vh',
+        '80vh': '80vh',
+        '100vh': '100vh',
+      },
+      backgroundImage: {
+        gradient: 'linear-gradient(to right, #1b263b 0%, black 100%);',
       },
     },
   },
