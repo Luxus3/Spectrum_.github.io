@@ -1,6 +1,13 @@
 ---
+import { Image } from 'astro:assets';
+import { FaDiscord } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import IconA from './../components/Icons.js';
+import '@fontsource-variable/raleway';
+import '@fontsource-variable/montserrat';
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,44 +15,74 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen font-raleway flex flex-col">
+    <header class="grow-0 bg-gradient pt-5 pb-5 pr-4 pl-4">
+      <div
+        class="max-w-desktop w-full ml-auto mr-auto flex items-start justify-start">
+        <div class="inline-block w-10 h-10 bg-purple-500"></div>
+      </div>
+    </header>
+    <slot />
+    <footer class="text-color grow-0 bg-footer pt-5 pb-5">
+      <div
+        class="text-center ml-auto mr-auto max-w-desktop h-full flex flex-col">
+        <div
+          class="flex flex-col gap-2 pt-2 pb-2 grow md:flex-row md:items-center md:justify-between p-4">
+          <div>
+            <span
+              class="text-xl font-montserrat font-bold tracking-wider md:text-2xl lg:text-3xl"
+              >Spectrum</span
+            >
+          </div>
+          <aside>
+            <h2 class="text-lg font-bold mb-2 md:text-xl">Contact us</h2>
+            <div class="md:flex md:gap-20 lg:gap-44">
+              <div class="mb-2 md:mb-0 md:flex md:flex-col md:gap-5">
+                <h3 class="text-md font-semibold mb-2">Social media</h3>
+                <nav class="text-icon mb-4">
+                  <ul class="flex items-center justify-center gap-4">
+                    <li>
+                      <IconA title="Github" href="https://">
+                        <FaDiscord size="1.5rem" />
+                      </IconA>
+                    </li>
+                    <li>
+                      <IconA title="X" href="https://">
+                        <FaXTwitter size="1.5rem" />
+                      </IconA>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div>
+                <h3 class="text-md font-semibold mb-2">Support us</h3>
+                <a
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mb-2">Link</a
+                >
+                <p class="max-w-80 text-start">
+                  <strong>usdt(PoS)</strong>: Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ullam eaque repellendus fugit
+                  harum veniam placeat expedita quisquam animi id magnam.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <p class="text-sm grow-0">
+          &copy;2024 Spectrum labs | All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
