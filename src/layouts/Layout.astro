@@ -1,7 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-import { FaDiscord } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { BsDiscord } from 'react-icons/bs';
+import { BsTwitterX } from 'react-icons/bs';
 import IconA from './../components/Icons.js';
 import '@fontsource-variable/raleway';
 import '@fontsource-variable/montserrat';
@@ -17,79 +16,93 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content= " Welcome to Spectrum: Your Gateway to Secure, Swift, and Affordable Agreements on Polygon Blockchain. Spectrum facilitates seamless agreements, ensuring safety, speed, and cost-effectiveness for users. Connect with talented programmers offering software services and fulfill your software needs efficiently through Spectrum." />
+    <meta
+      name="description"
+      content=" Welcome to Spectrum: Your Gateway to Secure, Swift, and Affordable Agreements on Polygon Blockchain. Spectrum facilitates seamless agreements, ensuring safety, speed, and cost-effectiveness for users. Connect with talented programmers offering software services and fulfill your software needs efficiently through Spectrum."
+    />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="https://media.discordapp.net/attachments/1212225518045372436/1212225682902482974/photo-output.jpg?ex=65f11024&is=65de9b24&hm=addfb8e74318ede170da4d9eaa9edc5cf8789f1cf6945ca76870ad9e12b518d7&=&format=webp&width=723&height=683" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://media.discordapp.net/attachments/1212225518045372436/1212225682902482974/photo-output.jpg?ex=65f11024&is=65de9b24&hm=addfb8e74318ede170da4d9eaa9edc5cf8789f1cf6945ca76870ad9e12b518d7&=&format=webp&width=723&height=683"
+    />
     <meta name="generator" content={Astro.generator} />
-    <meta name="keywords" content="Polygon Blockchain agreements, Secure software services, Swift agreement signing, Affordable blockchain solutions, Programmer marketplace, Software development platform, Smart contract services, Efficient agreement execution, Decentralized software marketplace, Spectrum platform"/>
-    <meta name="copyright" content="Spectrum Labs">
-    <meta name="author" content="JavierCarrasco08 & Luxus">
-    <meta name="robots" content="index">
-    <meta name="color-scheme" content="dark"/>
+    <meta
+      name="keywords"
+      content="Polygon Blockchain agreements, Secure software services, Swift agreement signing, Affordable blockchain solutions, Programmer marketplace, Software development platform, Smart contract services, Efficient agreement execution, Decentralized software marketplace, Spectrum platform"
+    />
+    <meta name="copyright" content="Spectrum Labs" />
+    <meta name="author" content="JavierCarrasco08 & Luxus" />
+    <meta name="robots" content="index" />
+    <meta name="color-scheme" content="dark" />
 
     <title>{title}</title>
   </head>
   <body class="min-h-screen font-raleway flex flex-col">
-    <header class="text-color grow-0 bg-footer pt-5 pb-5">
+    <header class="text-color grow-0 bg-footer pl-4 pt-5 pb-5">
       <div
         class="max-w-desktop w-full ml-auto mr-auto flex items-start justify-start">
-        <div class="inline-block w-10 h-10 bg-purple-500">
-        <img src="https://media.discordapp.net/attachments/1212225518045372436/1212225682902482974/photo-output.jpg?ex=65f11024&is=65de9b24&hm=addfb8e74318ede170da4d9eaa9edc5cf8789f1cf6945ca76870ad9e12b518d7&=&format=webp&width=723&height=683" alt="">
-       </div>
+        <img
+          src="https://media.discordapp.net/attachments/1212225518045372436/1212225682902482974/photo-output.jpg?ex=65f11024&is=65de9b24&hm=addfb8e74318ede170da4d9eaa9edc5cf8789f1cf6945ca76870ad9e12b518d7&=&format=webp&width=723&height=683"
+          class="w-10 h-auto object-cover object-center"
+          alt=""
+        />
       </div>
     </header>
-    <slot />
-    <footer class="text-color grow-0 bg-footer pt-5 pb-5">
-      <div
-        class="text-center ml-auto mr-auto max-w-desktop h-full flex flex-col">
-        <div
-          class="flex flex-col gap-2 pt-2 pb-2 grow md:flex-row md:items-center md:justify-between p-4">
-          <div>
-            <span
-              class="text-xl font-montserrat font-bold tracking-wider md:text-2xl lg:text-3xl"
-              >Spectrum</span
-            >
-          </div>
-          <aside>
-            <h2 class="text-lg font-bold mb-2 md:text-xl">Contact us: thespectrumtoken@gmail.com</h2>
-            <div class="md:flex md:gap-20 lg:gap-44">
-              <div class="mb-2 md:mb-0 md:flex md:flex-col md:gap-5">
-                <h3 class="text-md font-semibold mb-2">Social media</h3>
-                <nav class="text-icon mb-4">
-                  <ul class="flex items-center justify-center gap-4">
-                    <li>
-                      <IconA title="Discord" href="https://discord.gg/Spm5eWSnuv">
-                        <FaDiscord size="1.5rem" />
-                      </IconA>
-                    </li>
-                    <li>
-                      <IconA title="X" href="https://x.com/spectrum_token?s=21">
-                        <FaXTwitter size="1.5rem" />
-                      </IconA>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div>
-                <h3 class="text-md font-semibold mb-2">Support us:</h3>
-                <a
-                  href=" https://link.trustwallet.com/send?address=0xDB8C90f7771EBd3209a90f5a39B813E9Ed222054&asset=c966
-Trust Website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="mb-2"><i>Click Here to donate MATIC-Via Trust Wallet</i></a
-                >
-                <p class="max-w-80 text-start">
-                  <strong>BTC</strong>: bc1q800kscz27h8r5tw8g7l952q607y6l9x5guesya
-                </p>
-              </div>
-            </div>
-          </aside>
-        </div>
-        <p class="text-sm grow-0">
-          &copy;2024 Spectrum labs | All rights reserved
-        </p>
-      </div>
-    </footer>
   </body>
+  <slot />
+  <footer class="text-color grow-0 bg-footer pt-5 pb-5">
+    <div class="text-center ml-auto mr-auto max-w-desktop h-full flex flex-col">
+      <div
+        class="flex flex-col gap-2 pt-2 pb-2 grow md:flex-row md:items-center md:justify-between p-4">
+        <div>
+          <span
+            class="text-xl font-montserrat font-bold tracking-wider md:text-2xl lg:text-3xl"
+            >Spectrum</span
+          >
+        </div>
+        <aside>
+          <h2 class="text-lg font-bold mb-2 md:text-xl">Contact us</h2>
+          <p class="mb-2 font-medium">thespectrumtoken@gmail.com</p>
+          <div class="md:flex md:gap-20 lg:gap-44">
+            <div class="mb-2 md:mb-0 md:flex md:flex-col md:gap-5">
+              <h3 class="text-md font-semibold mb-2">Social media</h3>
+              <nav class="text-icon mb-4">
+                <ul class="flex items-center justify-center gap-4">
+                  <li>
+                    <IconA title="Discord" href="https://discord.gg/Spm5eWSnuv">
+                      <BsDiscord size="1.5rem" />
+                    </IconA>
+                  </li>
+                  <li>
+                    <IconA title="X" href="https://x.com/spectrum_token?s=21">
+                      <BsTwitterX size="1.5rem" />
+                    </IconA>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-2">Support us:</h3>
+              <a
+                href=" https://link.trustwallet.com/send?address=0xDB8C90f7771EBd3209a90f5a39B813E9Ed222054&asset=c966
+                    Trust Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mb-2"
+                ><em>Click Here to donate MATIC-Via Trust Wallet</em></a
+              >
+              <p class="w-full text-sm sm:text-base">
+                <span class="font-bold">BTC</span>:
+                bc1q800kscz27h8r5tw8g7l952q607y6l9x5guesya
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <p class="text-xs grow-0">
+        &copy;2024 Spectrum labs | All rights reserved
+      </p>
+    </div>
+  </footer>
 </html>
