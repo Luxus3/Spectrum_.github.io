@@ -51,58 +51,57 @@ const { title } = Astro.props;
     </header>
   </body>
   <slot />
-  <footer class="text-color grow-0 bg-footer pt-5 pb-5">
-    <div class="text-center ml-auto mr-auto max-w-desktop h-full flex flex-col">
-      <div
-        class="flex flex-col gap-2 pt-2 pb-2 grow md:flex-row md:items-center md:justify-between p-4">
-        <div>
-          <span
-            class="text-xl font-montserrat font-bold tracking-wider md:text-2xl lg:text-3xl"
-            >Spectrum</span
-          >
-        </div>
-        <aside>
-          <h2 class="text-lg font-bold mb-2 md:text-xl">Contact us</h2>
-          <p class="mb-2 font-medium">thespectrumtoken@gmail.com</p>
-          <div class="md:flex md:gap-20 lg:gap-44">
-            <div class="mb-2 md:mb-0 md:flex md:flex-col md:gap-5">
-              <h3 class="text-md font-semibold mb-2">Social media</h3>
-              <nav class="text-icon mb-4">
-                <ul class="flex items-center justify-center gap-4">
-                  <li>
-                    <IconA title="Discord" href="https://discord.gg/Spm5eWSnuv">
-                      <BsDiscord size="1.5rem" />
-                    </IconA>
-                  </li>
-                  <li>
-                    <IconA title="X" href="https://x.com/spectrum_token?s=21">
-                      <BsTwitterX size="1.5rem" />
-                    </IconA>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div>
-              <h3 class="font-semibold text-lg mb-2">Support us:</h3>
-              <a
-                href=" https://link.trustwallet.com/send?address=0xDB8C90f7771EBd3209a90f5a39B813E9Ed222054&asset=c966
-                    Trust Website"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mb-2"
-                ><em>Click Here to donate MATIC-Via Trust Wallet</em></a
-              >
-              <p class="w-full text-sm sm:text-base">
-                <span class="font-bold">BTC</span>:
-                bc1q800kscz27h8r5tw8g7l952q607y6l9x5guesya
-              </p>
-            </div>
-          </div>
-        </aside>
+ <footer class="text-color grow-0 bg-footer pt-5 pb-5">
+  <div class="text-center ml-auto mr-auto max-w-desktop h-full flex flex-col">
+    <div
+      class="flex flex-col gap-4 pt-4 pb-4 grow md:flex-row md:items-center md:justify-between p-4"
+    >
+      <div>
+        <span
+          class="text-xl font-montserrat font-bold tracking-wider md:text-2xl lg:text-3xl"
+          >Spectrum</span
+        >
       </div>
-      <p class="text-xs grow-0">
-        &copy;2024 Spectrum labs | All rights reserved
-      </p>
+      <aside class="flex flex-col md:flex-row md:gap-16 lg:gap-20 w-full">
+        <!-- Social Media Section -->
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-md font-semibold mb-2">Social media</h3>
+          <nav class="text-icon mb-4">
+            <ul class="flex items-center justify-center md:justify-start gap-4">
+              <li>
+                <IconA title="Discord" href="https://discord.gg/Spm5eWSnuv">
+                  <BsDiscord size="1.5rem" />
+                </IconA>
+              </li>
+              <li>
+                <IconA title="X" href="https://x.com/spectrum_token?s=21">
+                  <BsTwitterX size="1.5rem" />
+                </IconA>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Support Us Section -->
+        <div>
+          <h3 class="font-semibold text-lg mb-2">Support us:</h3>
+          <a
+            href="https://link.trustwallet.com/send?address=0xDB8C90f7771EBd3209a90f5a39B813E9Ed222054&asset=c966"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mb-2 block"
+            ><em>Click Here to donate MATIC-Via Trust Wallet</em></a
+          >
+          <p class="w-full text-sm sm:text-base">
+            <span class="font-bold">BTC</span>:
+            bc1q800kscz27h8r5tw8g7l952q607y6l9x5guesya
+          </p>
+        </div>
+      </aside>
     </div>
-  </footer>
+    <p class="text-xs grow-0">
+      &copy;2024 Spectrum labs | All rights reserved
+    </p>
+  </div>
+</footer>
 </html>
