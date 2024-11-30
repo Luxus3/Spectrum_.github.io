@@ -53,21 +53,19 @@ const { title } = Astro.props;
   <slot />
  <footer class="text-color grow-0 bg-footer pt-5 pb-5">
   <div class="text-center ml-auto mr-auto max-w-desktop h-full flex flex-col">
-    <div
-      class="flex flex-col gap-4 pt-4 pb-4 grow md:flex-row md:items-center md:justify-between p-4"
-    >
+    <div class="flex flex-col items-center gap-4 pt-4 pb-4 grow p-4">
       <div>
         <span
           class="text-xl font-montserrat font-bold tracking-wider md:text-2xl lg:text-3xl"
           >Spectrum</span
         >
       </div>
-      <aside class="flex flex-col md:flex-row md:gap-16 lg:gap-20 w-full">
+      <aside class="flex flex-col items-center gap-8">
         <!-- Social Media Section -->
-        <div class="mb-4 md:mb-0">
+        <div class="flex flex-col items-center">
           <h3 class="text-md font-semibold mb-2">Social media</h3>
-          <nav class="text-icon mb-4">
-            <ul class="flex items-center justify-center md:justify-start gap-4">
+          <nav class="text-icon">
+            <ul class="flex items-center justify-center gap-4">
               <li>
                 <IconA title="Discord" href="https://discord.gg/Spm5eWSnuv">
                   <BsDiscord size="1.5rem" />
@@ -83,7 +81,7 @@ const { title } = Astro.props;
         </div>
 
         <!-- Support Us Section -->
-        <div>
+        <div class="flex flex-col items-center text-center">
           <h3 class="font-semibold text-lg mb-2">Support us:</h3>
           <a
             href="https://link.trustwallet.com/send?address=0xDB8C90f7771EBd3209a90f5a39B813E9Ed222054&asset=c966"
@@ -92,7 +90,7 @@ const { title } = Astro.props;
             class="mb-2 block"
             ><em>Click Here to donate MATIC-Via Trust Wallet</em></a
           >
-          <p class="w-full text-sm sm:text-base">
+          <p class="text-sm sm:text-base">
             <span class="font-bold">BTC</span>:
             bc1q800kscz27h8r5tw8g7l952q607y6l9x5guesya
           </p>
